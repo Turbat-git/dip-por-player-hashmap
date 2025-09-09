@@ -85,15 +85,15 @@ def sha256_hash(key: str, size: int) -> int:
 
 3. List the three most important attributes (arranged from most to least) in the context of a hash map? Justify your answer.
 
-> Your answer here
+> Collision Resistance would be the most important as high chance of collision would result in slower retrieval/removal of data.  
 
 4. Which of the above hash functions would you choose to implement the requirements of the task? Why?
 
-> Your answer here
+> Pearson Hash function. Pearson Hash function is efficient and has low chance of collisions and security is not the main concern of the program that I am building.
 
 5. In your own words, explain each line in the pearson hash function above in terms of the criteria you listed in question 2.
 
-> Your answer here
+> 
 
 6. Write pseudocode of how you would store Players in PlayerLists in a hash map.
 
