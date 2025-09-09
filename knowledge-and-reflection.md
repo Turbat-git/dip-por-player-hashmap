@@ -73,11 +73,15 @@ def sha256_hash(key: str, size: int) -> int:
 
 1. All of the above functions are hash functions. Explain how so - what key properties do they all share?
 
-> Your answer here
+> They all return an integer value that is hard to trace back to the original input of the function.
 
 2. What are the advantages and disadvantages of each of the above hash functions? Evaluate in terms of uniformity, determinism, efficiency, collision resistance, sensitivity to input changes, and security[1](#Reference). You may need to do some reasearch to answer this question 😱
 
-> Your answer here
+> 1. The advantage of the first hash function is its speed, but all keys map to 1 so it would have hash collision every time.
+> 2. Pros: The function is simple and efficient. Cons: Unable to differentiate between different words with similar letters, such as one and eon, which leads to high collision rate.
+> 3. Pros: Distributes the keys better and has low chance of collisions. Cons: Not very cryptographically secure.
+> 4. Pros: Efficient and has good distribution so low chance of collisions. Cons: Not very cryptographically secure.
+> 5. Pros: Extremely low chances of collisions and cryptographically secure. Cons: Slow compared to other hashing methods.
 
 3. List the three most important attributes (arranged from most to least) in the context of a hash map? Justify your answer.
 
